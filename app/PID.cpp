@@ -19,7 +19,7 @@ PID::PID(double _kp, double _ki, double _kd, double _dt) {
             << " dt = " << dt << std::endl;
 }
 
-double PID::compute(double target) { return 100.0; }
+double PID::compute(double target) { return 0.0; }
 
 /**
  * @brief Destructor fot PID class objects
