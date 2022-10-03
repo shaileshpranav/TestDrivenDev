@@ -12,6 +12,8 @@
 ## Overview
  This is a simple implementeation of a PID Controller for ACME Robotics, using [pair programming](https://en.wikipedia.org/wiki/Pair_programming) method.
 
+## UML diagram
+<img title="UML" alt="UML diagram for the PID controller" src="uml/UML_PID.svg">
 
 ## Standard install via command-line
 ```
