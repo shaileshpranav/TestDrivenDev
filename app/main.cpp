@@ -10,7 +10,7 @@
  * 
  */
 #include <iostream>
-
+#include "../include/PID.hpp"
 /**
  * @brief Main function
  * 
@@ -18,5 +18,6 @@
  */
 
 int main() {
-    return 0;
+    PID pid(0.01,0.01,0.01,0.1);
+    pid.compute(20);
 }

@@ -10,16 +10,33 @@
  */
 
 #include "../include/PID.hpp"
+#include <math.h>
 /**
  * @brief Constructor to initialize with user defined values
  */
 PID::PID(double _kp, double _ki, double _kd, double _dt) {
-  double kp = _kp, ki = _ki, kd = _kd, dt = _dt;
-  std::cout << "Values for kp = " << kp << " ki = " << ki << " kd = " << kd
-            << " dt = " << dt << std::endl;
+  PID::_dt = _dt; // updated by okritvik
+  PID::_kd = _kd; // updated by okritvik
+  PID::_ki = _ki; // updated by okritvik
+  PID::_kp = _kp; // updated by okritvik
 }
 
-double PID::compute(double target) { return 0.0; }
+double PID::compute(double target) {
+  std::cout << "PID VALUES: " << _kp << " " << _ki << " " << _kd << " " << _dt << "\n"; 
+  double current_vel = 0;
+  double error = 0;
+  while (true) {
+    // break;
+    error = target - current_vel;
+    current_vel += _kp*error + (_kd*error)/_dt + (_ki)*error;
+    // std::cout << error << "\n";
+    if (error < 1e-10) {
+      std::cout << "FINAL VELOCITY: " << current_vel << "\n";
+      return current_vel;
+    }
+  }
+
+}
 
 /**
  * @brief Destructor fot PID class objects

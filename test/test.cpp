@@ -18,19 +18,19 @@
  * @brief Class initialized with inputs for testing
  *
  */
-PID pid(1, 5, 10, 1);
+PID pid(0.5, 0.01, 0.01, 0.1);
 
 /**
  * @brief Test to check implementation of the formula
  *
  */
-TEST(PIDtest, corr_result) { ASSERT_EQ(pid.compute(25), 25); }
+TEST(PIDtest, corr_result) { EXPECT_NEAR(pid.compute(25.0), 25, 0.0001); }
 
 /**
  * @brief Test to check output for a really large input
  *
  */
-TEST(PIDtest, upper_bound) { ASSERT_LT(pid.compute(10000), 2500); }
+TEST(PIDtest, upper_bound) { ASSERT_GT(pid.compute(10000), 2500); }
 
 /**
  * @brief Test to check output for a really small input
