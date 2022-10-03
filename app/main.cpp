@@ -1,3 +1,4 @@
+// Copyright 2022 Shailesh Pranav Rajendran
 /**
  * @file main.cpp
  * @author Shailesh Pranav Rajendran (spraj@umd.edu)
@@ -16,7 +17,6 @@
  * @return int: Execution status
  */
 
-int main()
-{
+int main() {
     return 0;
 }
