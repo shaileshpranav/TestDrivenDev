@@ -1,18 +1,21 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+<!-- [![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate) -->
+[![Coverage Status](https://coveralls.io/repos/github/shaileshpranav/TestDrivenDev/badge.svg?branch=master)](https://coveralls.io/github/shaileshpranav/TestDrivenDev?branch=master)
 ---
 
+## Authors:
+### Part I
+- Driver: [Shailesh Pranav Rajendran](https://github.com/shaileshpranav)
+- Navigator: Dhinesh Rajasekaran
+### Part II
+- Kumara Oruganti 
 ## Overview
+ This is a simple implementeation of a PID Controller for ACME Robotics, using [pair programming](https://en.wikipedia.org/wiki/Pair_programming) method.
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/shaileshpranav/TestDrivenDev.git
 cd <path to repository>
 mkdir build
 cd build
