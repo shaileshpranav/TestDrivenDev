@@ -9,9 +9,8 @@
  * @copyright Copyright (c) 2022
  *
  */
+#include <PID.hpp>
 #include <iostream>
-
-#include "../include/PID.hpp"
 /**
  * @brief Main function
  *
