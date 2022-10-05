@@ -7,8 +7,10 @@
 ### Part I
 - Driver: [Shailesh Pranav Rajendran](https://github.com/shaileshpranav)
 - Navigator: Dhinesh Rajasekaran
+
 ### Part II
-- Kumara Oruganti 
+- Driver and Navigator: [Kumara Ritvik Oruganti](https://www.github.com/okritvik)
+
 ## Overview
  This is a simple implementeation of a PID Controller for ACME Robotics, using [pair programming](https://en.wikipedia.org/wiki/Pair_programming) method.
 

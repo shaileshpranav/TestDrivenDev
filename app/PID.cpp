@@ -1,6 +1,7 @@
 /**
  * @file PID.cpp
  * @author Shailesh Pranav Rajendran (spraj@umd.edu)
+ * @author Kumara Ritvik Oruganti(okritvik@umd.edu)
  * @brief This file defines the class and functions for the PID controller
  * @version 0.1
  * @date 2022-10-03
@@ -10,19 +11,30 @@
  */
 
 #include "../include/PID.hpp"
-/**
- * @brief Constructor to initialize with user defined values
- */
+
 PID::PID(double _kp, double _ki, double _kd, double _dt) {
-  double kp = _kp, ki = _ki, kd = _kd, dt = _dt;
-  std::cout << "Values for kp = " << kp << " ki = " << ki << " kd = " << kd
-            << " dt = " << dt << std::endl;
+  // Updated the previous constructor
+  PID::_dt = _dt;
+  PID::_kd = _kd;
+  PID::_ki = _ki;
+  PID::_kp = _kp;
 }
 
-double PID::compute(double target) { return 0.0; }
+double PID::compute(double target) {
+  double current_vel = 0;
+  while (true) {
+    // Calculating the error
+    double error = target - current_vel;
+    // Updating the Current Velocity
+    current_vel += _kp*error + (_kd*error)/_dt + (_ki)*error;
+    // std::cout << error << "\n";
 
-/**
- * @brief Destructor fot PID class objects
- *
- */
+    // Rounding off the error to 10^-10 decimal
+    if (error < 1e-10) {
+      std::cout << "FINAL VELOCITY: " << current_vel << "\n";
+      return current_vel;
+    }
+  }
+}
+
 PID::~PID() {}
