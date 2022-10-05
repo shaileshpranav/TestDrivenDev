@@ -1,3 +1,4 @@
+shailesh@wireless-10-104-21-200 cpp-boilerplate % cpplint $( find . -name '*.cpp' -or -name '*.hpp' | grep -vE -e "^./build/" -e "^./vendor/" )
 Done processing ./app/PID.cpp
 Done processing ./app/main.cpp
 Done processing ./include/PID.hpp

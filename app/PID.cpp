@@ -26,7 +26,7 @@ double PID::compute(double target) {
     // Calculating the error
     double error = target - current_vel;
     // Updating the Current Velocity
-    current_vel += _kp*error + (_kd*error)/_dt + (_ki)*error;
+    current_vel += _kp*error + (_kd*error)/_dt + (_ki)*error*_dt;
     // std::cout << error << "\n";
 
     // Rounding off the error to 10^-10 decimal
