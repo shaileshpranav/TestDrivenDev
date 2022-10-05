@@ -10,7 +10,7 @@
  *
  */
 
-#include "../include/PID.hpp"
+#include <PID.hpp>
 
 PID::PID(double _kp, double _ki, double _kd, double _dt) {
   // Updated the previous constructor

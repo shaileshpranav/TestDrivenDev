@@ -18,6 +18,4 @@
  * @return int: Execution status
  */
 
-int main() {
-  return 0;
-}
+int main() { return 0; }
