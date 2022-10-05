@@ -6,7 +6,7 @@
 ## Authors:
 ### Part I
 - Driver: [Shailesh Pranav Rajendran](https://github.com/shaileshpranav)
-- Navigator: Dhinesh Rajasekaran
+- Navigator: [Dhinesh Rajasekaran](https://github.com/stark-2000)
 
 ### Part II
 - Driver and Navigator: [Kumara Ritvik Oruganti](https://www.github.com/okritvik)
